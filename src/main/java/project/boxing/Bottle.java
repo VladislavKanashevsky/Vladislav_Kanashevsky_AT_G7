@@ -4,8 +4,8 @@ import project.composition.Bubble;
 import project.composition.SparklingWater;
 
 public class Bottle {
-    double volume;
-    SparklingWater water;
+    private double volume;
+    private SparklingWater water;
 
     public Bottle(double volume) {
         this.volume = volume;

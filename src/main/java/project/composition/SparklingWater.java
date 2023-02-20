@@ -1,7 +1,7 @@
 package project.composition;
 
 public class SparklingWater extends Water {
-    public Bubble[] bubbles;
+    private Bubble[] bubbles;
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;

@@ -1,8 +1,8 @@
 package project.composition;
 
 public class Bubble {
-    double volume;
-    String gasComposition;
+    private double volume;
+    private String gasComposition;
 
     public void cramp() {
         System.out.println("Cramp!");

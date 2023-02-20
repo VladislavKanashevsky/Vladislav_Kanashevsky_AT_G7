@@ -1,8 +1,8 @@
 package project.composition;
 
 public abstract class Water {
-    String color;
-    String clarity;
-    String smell;
-    String temperature;
+    private String color;
+    private String clarity;
+    private String smell;
+    private String temperature;
 }
