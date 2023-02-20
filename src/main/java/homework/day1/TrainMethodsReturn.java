@@ -24,17 +24,6 @@ public class TrainMethodsReturn {
         }
     }
 
-
-    int number;
-    long number2;
-    char symbol2;
-    float fraction3;
-    double fraction4;
-    short number3;
-    byte number4;
-    boolean isActive2;
-
-
     public int returnNewInt(int number) {
         return number * 3;
     }

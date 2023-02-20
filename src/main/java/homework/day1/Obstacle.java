@@ -1,8 +1,8 @@
 package homework.day1;
 
 public class Obstacle {
-    String severity;
-    String description = "преграждающее наш проезд";
+    private String severity;
+    private String description;
 
     public Obstacle() {
         description = "очень сильное";

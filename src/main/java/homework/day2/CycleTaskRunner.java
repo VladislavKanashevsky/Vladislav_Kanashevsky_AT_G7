@@ -4,66 +4,64 @@ package homework.day2;
 public class CycleTaskRunner {
 
     public static class TestCycleTaskWhile {
+
         public static void main(String[] args) {
+
             CycleTaskRunner cycleTaskRunner = new CycleTaskRunner();
-            cycleTaskRunner.processCycleTaskWhile(new CycleTaskWhile());
+            cycleTaskRunner.processCycleTaskWhile();
             System.out.println();
-            cycleTaskRunner.processCycleTaskFor(new CycleTaskFor());
+            cycleTaskRunner.processCycleTaskFor();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArray(new CycleTaskArray());
+            cycleTaskRunner.processCycleTaskArray();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArrayTwo(new CycleTaskArrayTwo());
+            cycleTaskRunner.processCycleTaskArrayTwo();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArrayThree(new CycleTaskArrayThree());
+            cycleTaskRunner.processCycleTaskArrayThree();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArrayFour(new CycleTaskArrayFour());
+            cycleTaskRunner.processCycleTaskArrayFour();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArrayFive(new CycleTaskArrayFive());
+            cycleTaskRunner.processCycleTaskArrayFive();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArraySix(new CycleTaskArraySix());
+            cycleTaskRunner.processCycleTaskArraySix();
             System.out.println();
-            cycleTaskRunner.processCycleTaskArraySeven(new CycleTaskArraySeven());
+            cycleTaskRunner.processCycleTaskArraySeven();
         }
     }
 
-    public void processCycleTaskWhile(CycleTaskWhile cycleTaskWhile) {
-        cycleTaskWhile.printCycleTaskWhile();
+    public void processCycleTaskWhile() {
+        new CycleTaskWhile().printCycleTaskWhile();
     }
 
-    public void processCycleTaskFor(CycleTaskFor cycleTaskFor) {
-        cycleTaskFor.printCycleTaskFor();
+    public void processCycleTaskFor() {
+        new CycleTaskFor().printCycleTaskFor();
     }
 
-    public void processCycleTaskArray(CycleTaskArray cycleTaskArray) {
-
-        cycleTaskArray.printCycleTaskArray();
-
+    public void processCycleTaskArray() {
+        new CycleTaskArray().printCycleTaskArray();
     }
 
-    public void processCycleTaskArrayTwo(CycleTaskArrayTwo cycleTaskArrayTwo) {
-
-        cycleTaskArrayTwo.printCycleTaskArrayTwo();
-
+    public void processCycleTaskArrayTwo() {
+        new CycleTaskArrayTwo().printCycleTaskArrayTwo();
     }
 
-    public void processCycleTaskArrayThree(CycleTaskArrayThree cycleTaskArrayThree) {
-        cycleTaskArrayThree.printCycleTaskArrayThree();
+    public void processCycleTaskArrayThree() {
+        new CycleTaskArrayThree().printCycleTaskArrayThree();
     }
 
-    public void processCycleTaskArrayFour(CycleTaskArrayFour cycleTaskArrayFour) {
-        cycleTaskArrayFour.printCycleTaskArrayFour();
+    public void processCycleTaskArrayFour() {
+        new CycleTaskArrayFour().printCycleTaskArrayFour();
     }
 
-    public void processCycleTaskArrayFive(CycleTaskArrayFive cycleTaskArrayFive) {
-        cycleTaskArrayFive.printCycleTaskArrayFive();
+    public void processCycleTaskArrayFive() {
+        new CycleTaskArrayFive().printCycleTaskArrayFive();
     }
 
-    public void processCycleTaskArraySix(CycleTaskArraySix cycleTaskArraySix) {
-        cycleTaskArraySix.printCycleTaskArraySix();
+    public void processCycleTaskArraySix() {
+        new CycleTaskArraySix().printCycleTaskArraySix();
     }
 
-    public void processCycleTaskArraySeven(CycleTaskArraySeven cycleTaskArraySeven) {
-        cycleTaskArraySeven.printCycleTaskArraySeven();
+    public void processCycleTaskArraySeven() {
+        new CycleTaskArraySeven().printCycleTaskArraySeven();
     }
 }
 

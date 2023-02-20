@@ -1,8 +1,8 @@
 package homework.day1;
 
 public class Mouse {
-    public String name;
-    public int age;
+    private String name;
+    private int age;
 
     public Mouse() {
         name = "Джери";

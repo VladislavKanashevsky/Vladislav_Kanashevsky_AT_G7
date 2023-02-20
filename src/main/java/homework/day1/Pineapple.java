@@ -1,8 +1,8 @@
 package homework.day1;
 
 public class Pineapple {
-    String grade;
-    double heatCapacity;
+    private String grade;
+    private double heatCapacity;
 
     public Pineapple() {
         grade = "Pineapple";

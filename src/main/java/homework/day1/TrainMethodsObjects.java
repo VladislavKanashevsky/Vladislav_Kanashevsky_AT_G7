@@ -36,7 +36,7 @@ public class TrainMethodsObjects {
     }
 
     public void processObstacle(Obstacle obstacle) {
-        System.out.println(obstacle.description + " " + obstacle.severity);
+        System.out.println(obstacle.getDescription() + " " + obstacle.getSeverity());
         obstacle.printObstacleDetails();
 
     }

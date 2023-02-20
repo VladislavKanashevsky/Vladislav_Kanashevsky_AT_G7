@@ -5,7 +5,7 @@ public class CycleTaskWhile {
 
     public void printCycleTaskWhile() {
         while (number <= 20) {
-            System.out.print(number*1 + " ");
+            System.out.print(number * 1 + " ");
             number += 1;
         }
     }

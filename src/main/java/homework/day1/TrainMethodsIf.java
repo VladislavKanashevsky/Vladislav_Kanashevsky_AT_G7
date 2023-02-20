@@ -20,15 +20,6 @@ public class TrainMethodsIf {
         }
     }
 
-    int number5;
-    long number6;
-    char symbol3;
-    float fraction5;
-    double fraction6;
-    short number7;
-    byte number8;
-    boolean isActive3;
-
     public int returnNewInt(int number5) {
         if (number5 < 8) {
             return number5 * 7;

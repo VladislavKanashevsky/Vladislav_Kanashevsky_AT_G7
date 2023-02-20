@@ -5,7 +5,7 @@ public class TrainMethodsPrimitive {
     public static class TrainMethodsPrimitiveRunner {
         public static void main(String[] args) {
             TrainMethodsPrimitive trainMethodsPrimitive = new TrainMethodsPrimitive();
-            trainMethodsPrimitive.printlnt(2);
+            trainMethodsPrimitive.printInt(2);
             trainMethodsPrimitive.printLong(999999999);
             trainMethodsPrimitive.printChar('a');
             trainMethodsPrimitive.printFloat(7.77F);
@@ -16,22 +16,7 @@ public class TrainMethodsPrimitive {
         }
     }
 
-    int integer;
-    long integer2;
-
-    char symbol;
-
-    float fraction;
-
-    double fraction2;
-
-    short integer3;
-
-    byte integer4;
-
-    boolean isActive;
-
-    public void printlnt(int integer) {
+    public void printInt(int integer) {
         System.out.println("Я получил на вход число" + integer);
     }
 

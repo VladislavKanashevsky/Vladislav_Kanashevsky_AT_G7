@@ -1,8 +1,8 @@
 package homework.day1;
 
 public class Bee {
-    String gender;
-    long weight;
+    private String gender;
+    private long weight;
 
     public Bee() {
         gender = "Bee";

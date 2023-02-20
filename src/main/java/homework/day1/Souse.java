@@ -5,7 +5,7 @@ public class Souse {
     private String color;
 
     public Souse() {
-        name ="Сырный";
+        name = "Сырный";
         color = "желтого";
     }
 
@@ -26,7 +26,6 @@ public class Souse {
     }
 
     public void printSouseDetails() {
-        Souse souse = new Souse();
-        System.out.println("Это соус " + getName()+" " + getColor() + " цвета ");
+        System.out.println("Это соус " + getName() + " " + getColor() + " цвета ");
     }
 }
