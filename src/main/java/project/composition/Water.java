@@ -1,4 +1,4 @@
-package composition;
+package project.composition;
 
 public abstract class Water {
     String color;

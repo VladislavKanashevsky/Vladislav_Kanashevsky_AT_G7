@@ -1,4 +1,4 @@
-package composition;
+package project.composition;
 
 public class SparklingWater extends Water {
     public Bubble[] bubbles;

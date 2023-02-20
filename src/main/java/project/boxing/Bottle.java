@@ -1,7 +1,7 @@
-package boxing;
+package project.boxing;
 
-import composition.Bubble;
-import composition.SparklingWater;
+import project.composition.Bubble;
+import project.composition.SparklingWater;
 
 public class Bottle {
     double volume;
