@@ -1,4 +1,4 @@
-package project.composition;
+package composition;
 
 public class Bubble {
     private double volume;

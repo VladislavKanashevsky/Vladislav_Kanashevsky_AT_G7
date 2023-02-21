@@ -1,4 +1,4 @@
-package homework.day1;
+package day1;
 
 public class Obstacle {
     private String severity;

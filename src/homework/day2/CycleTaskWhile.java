@@ -1,4 +1,4 @@
-package homework.day2;
+package day2;
 
 public class CycleTaskWhile {
     int number = 0;
