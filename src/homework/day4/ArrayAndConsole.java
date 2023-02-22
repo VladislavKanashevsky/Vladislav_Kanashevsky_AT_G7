@@ -11,18 +11,41 @@ public class ArrayAndConsole {
     }
 
     public int[] processArrayAndConsoleSecond(int n, int[] array) {
-        for (int i = array.length - 1; i > n; i--) {
-            System.out.print(array[i]+" ");
+
+        int len = 0;
+
+        for (int i = 0; array.length > i; i++) {
+            if (array[i] > n) {
+                len++;
+            }
         }
-        return array;
+
+        int[] resultArray = new int[len];
+
+        int j = 0;
+
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] > n) {
+                resultArray[j] = array[i];
+                System.out.print(resultArray[j] + " ");
+                j++;
+            }
+        }
+        return resultArray;
     }
 
-    public void processArrayAndConsoleThird() {
-
+    public void processArrayAndConsoleThird(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            result += array[i];
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
     }
 
     public void processArrayAndConsoleFourth() {
-        String[] cow = {"           ^__^", "          (oo)\\\\_______", "         (__)\\ ) \\/ \\  \\", "              ||----w |\\", "              ||     ||"};
+        String[] cow = {"          ^__^", "          (oo)\\\\_______", "         (__)\\ ) \\/ \\  \\", "              ||----w |\\", "              ||     ||"};
         for (int i = 0; i < cow.length; i++) {
             System.out.println(cow[i]);
         }
