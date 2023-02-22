@@ -35,16 +35,13 @@ public class ArrayAndConsole {
     }
 
     public void processArrayAndConsoleThird(int[] array) {
-        int e = 0;
-        int result;
-        for (int i = 0; i <= array.length; i++) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            result += array[i];
             if (array[i] % 2 != 0) {
-
                 System.out.print(array[i] + " ");
             }
         }
-
-
     }
 
     public void processArrayAndConsoleFourth() {
