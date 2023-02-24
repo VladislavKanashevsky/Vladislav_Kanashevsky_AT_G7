@@ -2,22 +2,38 @@ package boxing;
 
 import composition.Bubble;
 import composition.SparklingWater;
+import composition.Water;
 
 public class Bottle {
     private double volume;
-    private SparklingWater water;
+    private Water water;
 
     public Bottle(double volume) {
         this.volume = volume;
-        this.water = new SparklingWater();
-        Bubble[] bubbles = new Bubble[(int) (10000 * volume)];
+        SparklingWater sparklingWater = new SparklingWater();
+        Bubble[] bubbles = new Bubble[(int) (10 * volume)];
         for (int i = 0; i < bubbles.length; i++) {
-            bubbles[i] = new Bubble();
+            bubbles[i] = new Bubble(" ");
         }
-        water.pump(bubbles);
+
+        sparklingWater.pump(bubbles);
+        sparklingWater.isSparkle();
+        this.water = sparklingWater;
     }
 
     public void open() {
-        water.degas();
+        this.water.open();
+    }
+
+    public void warm(int temperature) {
+        water.setTemperature(5);
+    }
+
+    public Water getWater() {
+        return water;
+    }
+
+    public void setWater(Water water) {
+        this.water = water;
     }
 }
