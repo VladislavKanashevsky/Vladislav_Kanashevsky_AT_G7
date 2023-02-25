@@ -35,19 +35,19 @@ public class SparklingWater extends Water {
         int lastCrampedBubbleIndex = 0;
         while (isSparkle()) {
             for (int i = lastCrampedBubbleIndex; i < lastCrampedBubbleIndex + 10 + 5 * getTemperature(); i++) {
-                if (
-
+                if
 
                 }
             }
         }
-        for (int i = 0; i < bubbles.length; i++) {
-            if (bubbles[i] != null) {
-                bubbles[i].cramp();
-                bubbles[i] = null;
-            }
-        }
     }
+    //for (int i = 0; i < bubbles.length; i++) {
+    //   if (bubbles[i] != null) {
+    //     bubbles[i].cramp();
+    //     bubbles[i] = null;
+    // }
+    //}
+    //}
 
     public boolean isSparkle() {
         for (int i = 0; i < bubbles.length; i++) {
