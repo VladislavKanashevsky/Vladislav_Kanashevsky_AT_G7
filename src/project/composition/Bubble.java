@@ -1,16 +1,21 @@
 package composition;
 
 public class Bubble {
-    private double volume;
-    private String gasComposition;
+
+    private double volume = 0.3;
+
+    private String gas;
+
+    public Bubble(String gas) {
+        this.gas = " ";
+    }
 
     public void cramp() {
         System.out.println("Cramp!");
     }
 
-    public Bubble() {
-        volume = 0.3;
-        gasComposition = " ";
+    public double getVolume() {
+        return volume;
     }
 }
 
