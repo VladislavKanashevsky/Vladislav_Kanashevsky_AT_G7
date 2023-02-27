@@ -33,14 +33,13 @@ public class SparklingWater extends Water {
 
     private void degas() {
         int lastCrampedBubbleIndex = 0;
-        while (isSparkle()) {
-            for (int i = lastCrampedBubbleIndex; i < lastCrampedBubbleIndex + 10 + 5 * getTemperature(); i++) {
-                if
+        while (isSparkle()){
+            for (int i=bubbles.length; i<lastCrampedBubbleIndex+10+5*getTemperature(); i++) {
 
                 }
             }
         }
-    }
+
     //for (int i = 0; i < bubbles.length; i++) {
     //   if (bubbles[i] != null) {
     //     bubbles[i].cramp();
@@ -51,7 +50,7 @@ public class SparklingWater extends Water {
 
     public boolean isSparkle() {
         for (int i = 0; i < bubbles.length; i++) {
-            if (bubbles != null) {
+            if (bubbles[i] != null) {
                 return true;
             }
         }
