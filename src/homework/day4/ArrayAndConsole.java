@@ -36,9 +36,10 @@ public class ArrayAndConsole {
 
     public void processArrayAndConsoleThird(int[] array) {
         int result = 0;
+        int month = 2;
         for (int i = 0; i < array.length; i++) {
             result += array[i];
-            if (array[i] % 2 != 0) {
+            if (array[i] % month != 0) {
                 System.out.print(array[i] + " ");
             }
         }
