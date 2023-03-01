@@ -1,13 +1,14 @@
 package day6.playground.essence.craft.air;
 
+import day6.playground.essence.Flyable;
 import day6.playground.essence.Matter;
 
-public abstract class AirVehicles extends Matter {
+public abstract class AirCraft extends Matter implements Flyable {
 
     protected String nameAirVehicles;
     String name;
 
-    public AirVehicles() {
+    public AirCraft() {
 
     }
 
@@ -26,4 +27,5 @@ public abstract class AirVehicles extends Matter {
     public void setName(String name) {
         this.name = name;
     }
+
 }
