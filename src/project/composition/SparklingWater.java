@@ -26,19 +26,23 @@ public class SparklingWater extends Water {
 
     private void isOpened() {
         if (isOpened) {
-            degas();
+           // degas();
         }
     }
 
 
-    private void degas() {
-        int lastCrampedBubbleIndex = 0;
-        while (isSparkle()){
-            for (int i=bubbles.length; i<lastCrampedBubbleIndex+10+5*getTemperature(); i++) {
-
-                }
-            }
+   // private void degas() {
+      //  int lastCrampedBubbleIndex = 0;
+      //  int batch = 10 + 5 * getTemperature();
+      //  while (isSparkle()) {
+       //     while (batch>bubbles.length) {
+            //    if (bubbles[i] != null) {
+                   // bubbles[i].cramp();
+                   // bubbles[i] = null;
+             //   }
+         //   }
         }
+   // }
 
     //for (int i = 0; i < bubbles.length; i++) {
     //   if (bubbles[i] != null) {
@@ -60,5 +64,6 @@ public class SparklingWater extends Water {
     @Override
     public void open() {
         setOpened(true);
+       // degas();
     }
 }

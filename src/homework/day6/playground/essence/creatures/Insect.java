@@ -1,6 +1,8 @@
 package day6.playground.essence.creatures;
 
-public abstract class Insect extends Animal {
+import day6.playground.essence.Flyable;
+
+public abstract class Insect extends Animal implements Flyable {
 
     protected String nameInsect;
     String name;

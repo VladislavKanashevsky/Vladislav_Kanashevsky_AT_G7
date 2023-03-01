@@ -2,7 +2,7 @@ package day6.playground.essence;
 
 public abstract class Matter {
 
-    protected  String weight;
+    protected String weight;
 
     int mass;
 
