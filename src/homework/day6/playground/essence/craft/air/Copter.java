@@ -1,6 +1,10 @@
 package day6.playground.essence.craft.air;
 
-public class Copter extends AirCraft {
+import day6.playground.essence.Flyable;
+import day6.playground.essence.craft.Transportable;
+
+public class Copter extends Aircraft implements Transportable, Flyable {
+
     protected int nameCopter;
     String name;
 

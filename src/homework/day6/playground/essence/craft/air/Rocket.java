@@ -1,6 +1,6 @@
 package day6.playground.essence.craft.air;
 
-public class Rocket extends AirCraft {
+public class Rocket extends Aircraft {
 
     protected int nameRocket;
     String name;

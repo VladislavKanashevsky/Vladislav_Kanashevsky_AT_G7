@@ -1,7 +1,7 @@
 package day6.playground.runners;
 
 import day6.playground.essence.Flyable;
-import day6.playground.essence.craft.air.AirCraft;
+import day6.playground.essence.craft.air.Aircraft;
 import day6.playground.essence.craft.air.Copter;
 import day6.playground.essence.craft.air.Plane;
 import day6.playground.essence.craft.air.Rocket;
@@ -21,9 +21,9 @@ public class FlyableProcessorRunner {
         Flyable flyableRocket = new Rocket(7623, "Super Heavy Flyable");
         Flyable flyableFly = new Fly(23, "Domestica Flyable");
         Flyable flyableMosquito = new Mosquito(12, "Vulgaris Flyable");
-        AirCraft aircraftCopter = new Copter(223, "Mi8 Aircraft");
-        AirCraft aircraftPlane = new Plane(3452, "Boeing 837 Aircraft");
-        AirCraft aircraftRocket = new Rocket(7623, "Super Heavy Aircraft");
+        Aircraft aircraftCopter = new Copter(223, "Mi8 Aircraft");
+        Aircraft aircraftPlane = new Plane(3452, "Boeing 837 Aircraft");
+        Aircraft aircraftRocket = new Rocket(7623, "Super Heavy Aircraft");
         Insect insectFly = new Fly(23, "Domestica Insect");
         Insect insectMosquito = new Mosquito(12, "Vulgaris Insect");
         Copter aCopter = new Copter(223, "Mi8 Copter");
@@ -32,24 +32,40 @@ public class FlyableProcessorRunner {
         Fly aFly = new Fly(23, "Domestica Fly");
         Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
 
-
         flyableProcessor.runFlyable(flyableCopter);
+        System.out.println();
         flyableProcessor.runFlyable(flyablePlane);
+        System.out.println();
         flyableProcessor.runFlyable(flyableRocket);
+        System.out.println();
         flyableProcessor.runFlyable(flyableFly);
+        System.out.println();
         flyableProcessor.runFlyable(flyableMosquito);
+        System.out.println();
         flyableProcessor.runFlyable(aircraftCopter);
+        System.out.println();
         flyableProcessor.runFlyable(aircraftPlane);
+        System.out.println();
         flyableProcessor.runFlyable(aircraftRocket);
+        System.out.println();
         flyableProcessor.runFlyable(insectFly);
+        System.out.println();
         flyableProcessor.runFlyable(insectMosquito);
+        System.out.println();
         flyableProcessor.runFlyable(aCopter);
+        System.out.println();
         flyableProcessor.runFlyable(aPlane);
+        System.out.println();
         flyableProcessor.runFlyable(aRocket);
+        System.out.println();
         flyableProcessor.runFlyable(aFly);
+        System.out.println();
         flyableProcessor.runFlyable(aMosquito);
+        System.out.println();
 
         flyableProcessor.runFlyable(flyableCopter, "nowhere");
+        System.out.println();
         flyableProcessor.runFlyable(flyablePlane, "everywhere");
+
     }
 }
