@@ -1,8 +1,10 @@
 package day6.playground.essence.craft.air;
 
-public class Plane extends AirCraft {
+public class Plane extends Aircraft {
+
     protected int namePlane;
     String name;
+
 
     public Plane(int namePlane, String name) {
         this.namePlane = namePlane;
