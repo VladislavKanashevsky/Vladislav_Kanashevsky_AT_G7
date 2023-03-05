@@ -26,31 +26,30 @@ public class SparklingWater extends Water {
 
     private void isOpened() {
         if (isOpened) {
-           // degas();
+            degas();
         }
     }
 
 
-   // private void degas() {
-      //  int lastCrampedBubbleIndex = 0;
-      //  int batch = 10 + 5 * getTemperature();
-      //  while (isSparkle()) {
-       //     while (batch>bubbles.length) {
-            //    if (bubbles[i] != null) {
-                   // bubbles[i].cramp();
-                   // bubbles[i] = null;
-             //   }
-         //   }
-
-   // }
-
-    //for (int i = 0; i < bubbles.length; i++) {
-    //   if (bubbles[i] != null) {
-    //     bubbles[i].cramp();
-    //     bubbles[i] = null;
-    // }
-    //}
-    //}
+    private void degas() {
+        int lastCrampedBubbleIndex = 0;
+        int batch = 10 + 5 * getTemperature();
+        while (isSparkle()) {
+            int s = lastCrampedBubbleIndex + batch >= bubbles.length ? bubbles.length : lastCrampedBubbleIndex + batch;
+            for (int i = lastCrampedBubbleIndex; i < s; i++) {
+                if (bubbles[i] != null) {
+                    bubbles[i].cramp();
+                    bubbles[i] = null;
+                }
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            lastCrampedBubbleIndex = lastCrampedBubbleIndex + batch;
+        }
+    }
 
     public boolean isSparkle() {
         for (int i = 0; i < bubbles.length; i++) {
@@ -64,6 +63,6 @@ public class SparklingWater extends Water {
     @Override
     public void open() {
         setOpened(true);
-       // degas();
+        degas();
     }
 }

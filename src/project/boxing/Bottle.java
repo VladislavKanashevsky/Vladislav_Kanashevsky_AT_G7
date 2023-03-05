@@ -11,7 +11,7 @@ public class Bottle {
     public Bottle(double volume) {
         this.volume = volume;
         SparklingWater sparklingWater = new SparklingWater();
-        Bubble[] bubbles = new Bubble[(int) (10 * volume)];
+        Bubble[] bubbles = new Bubble[(int) (10000 * volume)];
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble("Co2 ");
         }
