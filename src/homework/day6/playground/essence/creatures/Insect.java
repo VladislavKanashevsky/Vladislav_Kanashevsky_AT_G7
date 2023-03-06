@@ -2,19 +2,21 @@ package day6.playground.essence.creatures;
 
 import day6.playground.essence.Flyable;
 
-public abstract class Insect extends Animal implements Flyable {
+public abstract class Insect extends Animal implements Flyable,Crawlable {
 
-    protected String nameInsect;
+    protected int nameInsect;
     String name;
 
-    public Insect() {
+    public Insect(int nameInsect, String name) {
+        this.nameInsect = nameInsect;
+        this.name = name;
     }
 
-    public String getNameInsect() {
+    public int getNameInsect() {
         return nameInsect;
     }
 
-    public void setNameInsect(String nameInsect) {
+    public void setNameInsect(int nameInsect) {
         this.nameInsect = nameInsect;
     }
 

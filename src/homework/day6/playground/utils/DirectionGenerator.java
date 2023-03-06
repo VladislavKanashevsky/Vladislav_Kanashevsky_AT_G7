@@ -9,16 +9,12 @@ public class DirectionGenerator {
         int random = (int) (Math.random() * (max - min) + min);
 
         if (random <= 9) {
-            System.out.println("NORTH");
             return "NORTH";
         } else if (random <= 19) {
-            System.out.println("SOUTH");
             return "SOUTH";
         } else if (random <= 29) {
-            System.out.println("WEST");
             return "WEST";
         } else {
-            System.out.println("EAST");
             return "EAST";
         }
     }

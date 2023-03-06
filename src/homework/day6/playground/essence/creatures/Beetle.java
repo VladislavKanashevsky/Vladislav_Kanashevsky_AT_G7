@@ -2,19 +2,8 @@ package day6.playground.essence.creatures;
 
 public class Beetle extends Insect {
 
-    protected String nameBeetle;
-    String name;
-
-    Beetle() {
-        setMass(22);
-    }
-
-    public String getNameBeetle() {
-        return nameBeetle;
-    }
-
-    public void setNameBeetle(String nameBeetle) {
-        this.nameBeetle = nameBeetle;
+    public Beetle(int nameInsect, String name) {
+        super(nameInsect, name);
     }
 
     @Override
@@ -31,7 +20,7 @@ public class Beetle extends Insect {
         if (getMass() > home.getMass()) {
             int theRemainderOfTheMass;
             theRemainderOfTheMass = getMass() / home.getMass();
-            System.out.printf("I am " + getNameBeetle() + " and I will nest there with " + theRemainderOfTheMass + " my family members!");
+            System.out.printf("I am " + getName() + " and I will nest there with " + theRemainderOfTheMass + " my family members!");
         } else {
             System.out.println("This carrot is too small for nesting :( ");
         }

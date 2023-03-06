@@ -1,19 +1,20 @@
 package day6.playground.essence.creatures;
 
-public abstract class Vertebrates extends Animal {
+public abstract class Vertebrata extends Animal implements Crawlable {
 
-    protected String nameVertebrates;
+    protected int nameVertebrates;
     String name;
 
-    public Vertebrates() {
-
+    public Vertebrata(int nameVertebrates, String name) {
+        this.nameVertebrates = nameVertebrates;
+        this.name = name;
     }
 
-    public String getNameVertebrates() {
+    public int getNameVertebrates() {
         return nameVertebrates;
     }
 
-    public void setNameVertebrates(String nameVertebrates) {
+    public void setNameVertebrates(int nameVertebrates) {
         this.nameVertebrates = nameVertebrates;
     }
 
