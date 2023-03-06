@@ -2,6 +2,7 @@ package day6.playground.utils;
 
 public class CoordinatesGenerator {
     public static int generateCoordinate() {
+
         int max = 79;
         int min = 1;
         int random = (int) (Math.random() * (max - min) + min);

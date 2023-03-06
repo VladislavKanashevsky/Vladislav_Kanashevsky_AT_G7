@@ -3,20 +3,9 @@ package day6.playground.essence.creatures;
 import day6.playground.essence.Flyable;
 
 public class Fly extends Insect implements Flyable {
-    protected int nameFly;
-    String name;
 
-    public Fly(int nameFly, String name) {
-        this.nameFly = nameFly;
-        this.name = name;
-    }
-
-    public int getNameFly() {
-        return nameFly;
-    }
-
-    public void setNameFly(int nameFly) {
-        this.nameFly = nameFly;
+    public Fly(int nameInsect, String name) {
+        super(nameInsect, name);
     }
 
     @Override
