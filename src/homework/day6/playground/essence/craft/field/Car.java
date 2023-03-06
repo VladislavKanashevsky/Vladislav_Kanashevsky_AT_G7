@@ -2,21 +2,9 @@ package day6.playground.essence.craft.field;
 
 public class Car extends Vehicle {
 
-    protected int nameCar;
-    String name;
 
-    public Car(int nameCar, String name) {
-
-        this.nameCar = nameCar;
-        this.name = name;
-    }
-
-    public int getNameCar() {
-        return nameCar;
-    }
-
-    public void setNameCar(int nameCar) {
-        this.nameCar = nameCar;
+    public Car(int nameVehicle, String name) {
+        super(nameVehicle, name);
     }
 
     @Override

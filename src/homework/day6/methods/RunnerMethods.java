@@ -8,7 +8,7 @@ public class RunnerMethods {
     public static void main(String[] args) {
         MethodFirstProcess("sdasdad");
         System.out.println();
-        MethodSecondProcess("A A A A B B B B B C");
+        MethodSecondProcess("String String String Hello Hello Hello Hello  A A A A A D D D D D D D");
         System.out.println();
     }
 }

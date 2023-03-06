@@ -2,21 +2,14 @@ package day6.playground.essence.craft.field;
 
 public class Motorbike extends  Vehicle {
 
-    protected int nameMotorbike;
-    String name;
 
-    public Motorbike(int nameMotorbike, String name) {
-
-        this.nameMotorbike = nameMotorbike;
-        this.name = name;
+    public Motorbike(int nameVehicle, String name) {
+        super(nameVehicle, name);
     }
 
-    public int getNameMotorbike() {
-        return nameMotorbike;
-    }
-
-    public void setNameMotorbike(int nameMotorbike) {
-        this.nameMotorbike = nameMotorbike;
+    @Override
+    public void drive(String direction) {
+        super.drive(direction);
     }
 
     @Override
