@@ -2,21 +2,8 @@ package day6.playground.essence.craft.air;
 
 public class Plane extends Aircraft {
 
-    protected int namePlane;
-    String name;
-
-
-    public Plane(int namePlane, String name) {
-        this.namePlane = namePlane;
-        this.name = name;
-    }
-
-    public int getNamePlane() {
-        return namePlane;
-    }
-
-    public void setNamePlane(int namePlane) {
-        this.namePlane = namePlane;
+    public Plane(int nameAirCraft, String name) {
+        super(nameAirCraft, name);
     }
 
     @Override

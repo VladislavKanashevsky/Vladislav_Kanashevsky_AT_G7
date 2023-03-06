@@ -6,20 +6,23 @@ import day6.playground.essence.craft.Transportable;
 
 public abstract class Vehicle extends Matter implements Transportable, Rideable {
 
-    protected String nameVehicle;
+    protected int nameVehicle;
     String name;
 
-    public Vehicle() {
+    public Vehicle(int nameVehicle, String name) {
+        this.nameVehicle = nameVehicle;
+        this.name = name;
     }
 
-    public String getNameVehicle() {
+    public int getNameVehicle() {
         return nameVehicle;
     }
 
-    public void setNameVehicle(String nameVehicle) {
+    public void setNameVehicle(int nameVehicle) {
         this.nameVehicle = nameVehicle;
     }
 
+    @Override
     public String getName() {
         return name;
     }

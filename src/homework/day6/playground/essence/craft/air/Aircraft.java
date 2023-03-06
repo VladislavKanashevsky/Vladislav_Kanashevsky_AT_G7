@@ -9,8 +9,9 @@ public class Aircraft extends Matter implements Flyable, Transportable {
     protected int nameAirCraft;
     String name;
 
-    public Aircraft() {
-
+    public Aircraft(int nameAirCraft, String name) {
+        this.nameAirCraft = nameAirCraft;
+        this.name = name;
     }
 
     public int getNameAirCraft() {
@@ -19,6 +20,15 @@ public class Aircraft extends Matter implements Flyable, Transportable {
 
     public void setNameAirCraft(int nameAirCraft) {
         this.nameAirCraft = nameAirCraft;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -34,14 +44,5 @@ public class Aircraft extends Matter implements Flyable, Transportable {
     @Override
     public void move(int generateCoordinate) {
 
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
