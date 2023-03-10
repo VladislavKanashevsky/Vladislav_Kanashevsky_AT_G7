@@ -1,8 +1,7 @@
 package day6.methods;
 
-public class MethodSecond {
-
-    public void MethodSecondProcess(String string) {
+public class MethodSecondStatic {
+    public static void MethodSecondStaticProcess(String string) {
         String[] words = string.split(" ");
         for (int i = 0; i < words.length; i++) {
             boolean isWords = false;
