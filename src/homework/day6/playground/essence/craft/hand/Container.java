@@ -4,18 +4,19 @@ import day6.playground.essence.Matter;
 
 public abstract class Container extends Matter {
 
-    protected String nameContainer;
+    protected int nameContainer;
     String name;
 
-    public Container() {
-
+    public Container(int nameContainer, String name) {
+        this.nameContainer = nameContainer;
+        this.name = name;
     }
 
-    public String getNameContainer() {
+    public int getNameContainer() {
         return nameContainer;
     }
 
-    public void setNameContainer(String nameContainer) {
+    public void setNameContainer(int nameContainer) {
         this.nameContainer = nameContainer;
     }
 

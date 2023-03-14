@@ -2,20 +2,8 @@ package day6.playground.essence.creatures;
 
 public abstract class Vertebrata extends Animal implements Crawlable {
 
-    protected int nameVertebrates;
-    String name;
-
-    public Vertebrata(int nameVertebrates, String name) {
-        this.nameVertebrates = nameVertebrates;
-        this.name = name;
-    }
-
-    public int getNameVertebrates() {
-        return nameVertebrates;
-    }
-
-    public void setNameVertebrates(int nameVertebrates) {
-        this.nameVertebrates = nameVertebrates;
+    public Vertebrata(int nameAnimal, String name) {
+        super(nameAnimal, name);
     }
 
     @Override
@@ -29,6 +17,6 @@ public abstract class Vertebrata extends Animal implements Crawlable {
     }
 
     public void eat(Insect food) {
-        System.out.printf("I am " + nameVertebrates + " and I am eating" + food.getNameInsect());
+        System.out.printf("I am " + nameAnimal + " and I am eating" + food.getNameAnimal());
     }
 }
