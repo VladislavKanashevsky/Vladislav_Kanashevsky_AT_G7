@@ -7,7 +7,6 @@ public abstract class Matter {
     int mass;
 
     public Matter() {
-
     }
 
     public String getWeight() {

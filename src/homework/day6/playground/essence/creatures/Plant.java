@@ -4,18 +4,19 @@ import day6.playground.essence.Matter;
 
 public abstract class Plant extends Matter {
 
-    protected String namePlant;
+    protected int namePlant;
     String name;
 
-    public Plant() {
-
+    public Plant(int namePlant, String name) {
+        this.namePlant = namePlant;
+        this.name = name;
     }
 
-    public String getNamePlant() {
+    public int getNamePlant() {
         return namePlant;
     }
 
-    public void setNamePlant(String namePlant) {
+    public void setNamePlant(int namePlant) {
         this.namePlant = namePlant;
     }
 

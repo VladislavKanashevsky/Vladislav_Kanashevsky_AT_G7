@@ -2,19 +2,8 @@ package day6.playground.essence.creatures;
 
 public abstract class Flowers extends Plant {
 
-    protected String nameFlowers;
-    String name;
-
-    public Flowers() {
-
-    }
-
-    public String getNameFlowers() {
-        return nameFlowers;
-    }
-
-    public void setNameFlowers(String nameFlowers) {
-        this.nameFlowers = nameFlowers;
+    public Flowers(int namePlant, String name) {
+        super(namePlant, name);
     }
 
     @Override
