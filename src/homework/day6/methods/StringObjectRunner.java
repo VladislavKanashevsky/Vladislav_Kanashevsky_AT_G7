@@ -18,8 +18,7 @@ public class StringObjectRunner {
         System.out.println();
         new MethodSixth().MethodSixthProcess("22.00 07.09.2020");
         System.out.println();
-        new MethodSeventh();
+        new MethodSeventh().MethodSeventhProcess("22.00 07.09.2020");
         System.out.println();
-
     }
 }

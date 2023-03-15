@@ -7,9 +7,9 @@ import java.util.Locale;
 
 public class MethodSixth {
 
-    public void MethodSixthProcess(String s) throws ParseException {
+    public void MethodSixthProcess(String string) throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH.mm dd.MM.y", Locale.ENGLISH);
-        Date date = dateFormat.parse(s);
+        Date date = dateFormat.parse(string);
         SimpleDateFormat dateFormat1 = new SimpleDateFormat("MMMM, dd, y HH:mm", Locale.ENGLISH);
         System.out.println(dateFormat1.format(date));
     }
