@@ -15,8 +15,8 @@ public class StringStaticRunner {
         MethodThirdStatic.MethodThirdStaticProcess("Hello214124 color4124124 car12314 black321313");
         System.out.println();
 
-
-
+        MethodFourthStatic.MethodFourthStaticProcess("2020.09.07");
+        System.out.println();
 
         MethodFifthStatic.MethodFifthStaticProcess();
         System.out.println();
@@ -24,6 +24,7 @@ public class StringStaticRunner {
         MethodSixthStatic.MethodSixthStaticProcess("22.00 07.09.2020");
         System.out.println();
 
-
+        MethodSeventhStatic.MethodSeventhStaticProcess("22.00 07.09.2020");
+        System.out.println();
     }
 }
