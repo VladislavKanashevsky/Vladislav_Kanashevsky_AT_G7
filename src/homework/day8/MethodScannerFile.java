@@ -11,7 +11,7 @@ public class MethodScannerFile {
         while ((line = in.readLine()) != null) {
             System.out.println();
             System.out.println(line);
-            String pattern = "((?=,|\\.|!)| |')";
+            String pattern = "(?=,|\\.|!| |')";
             String[] sum = line.split(pattern);
             System.out.println();
             System.out.println("Amount of words and punctuation marks are " + sum.length);
