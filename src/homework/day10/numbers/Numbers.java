@@ -15,8 +15,8 @@ public class Numbers {
         }
 
         int counter = 0;
-        for (Integer number : numbers) {
-            counter += number;
+        for (Integer summa : numbers) {
+            counter += summa;
         }
         System.out.println("\n" + "Сумма всех чисел: " + counter);
 
