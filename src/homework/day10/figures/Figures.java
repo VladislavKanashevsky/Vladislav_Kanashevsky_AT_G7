@@ -36,7 +36,7 @@ public class Figures {
             System.out.print(i + 1 + ")" + figures.get(i) + " ");
         }
 
-        figures.set(3, "Треугольник");
+        figures.add(3, "Треугольник");
 
         System.out.println("\n");
 
