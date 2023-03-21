@@ -13,21 +13,17 @@ public class Cities {
         cities.add("Берлин");
 
         for (String city : cities) {
-            System.out.println(city);
+            System.out.println(city + "\n");
         }
-
-        System.out.println();
 
         int counter = 0;
         for (String city : cities) {
             counter += city.length();
         }
-        System.out.println("Количество букв : " + counter);
-
-        System.out.println();
+        System.out.println("Количество букв : " + counter + "\n");
 
         for (int i = 0; i < cities.size(); i++) {
-            System.out.print(cities.get(i) + " ");
+            System.out.print(i + ")" + cities.get(i) + " ");
         }
     }
 }

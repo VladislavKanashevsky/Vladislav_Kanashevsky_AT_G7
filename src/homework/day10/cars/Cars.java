@@ -8,9 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cars {
+
     public static void main(String[] args) throws IOException {
 
         List<String> cars = new ArrayList<>();
+
         cars.add("Мерс");
         cars.add("Ауди");
         cars.add("Жигуль");
@@ -19,13 +21,24 @@ public class Cars {
         cars.add("Жигуль");
         cars.add("Ауди");
 
-        File file = new File("C:\\Users\\kanas\\Vladislav_Kanashevsky_AT_G7\\src\\homework\\day10\\cars\\cars.txt");
-
+        File file = new File("src\\homework\\day10\\cars\\cars.txt");
+        BufferedWriter out = new BufferedWriter(new FileWriter(file));
         for (String car : cars) {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file));
-            out.write("-" + "\"" + car + "\"");
-            out.close();
+            out.write("-\"" + car + "\"\n");
+        }
+        out.close();
+
+
+        for (int i = 0; i < cars.size(); i++) {
+            if (cars.get(i).length() > 4) {
+                cars.remove(i);
+                i--;
+            }
         }
 
+        for (String carTwo : cars) {
+            System.out.print(carTwo + " ");
+        }
     }
 }
+

@@ -14,9 +14,8 @@ public class Butterflies {
         butterflies.add("Common blue");
 
         for (String butterfly : butterflies) {
-            System.out.println("\"" + butterfly + "\"");
+            System.out.print("\"" + butterfly + "\"" + " ");
         }
-        System.out.println();
 
         int counter = 0;
 
@@ -25,17 +24,14 @@ public class Butterflies {
                 counter++;
             }
         }
-        System.out.println("Amount of butterflies with \"o\" : " + counter);
-        System.out.println();
+        System.out.println("\n" + "Amount of butterflies with \"o\" : " + counter + "\n");
 
         for (int i = 0; i < butterflies.size(); i++) {
-            System.out.println(butterflies.get(i) + " ");
+            System.out.println(i + 1 + ":" + butterflies.get(i) + " ");
         }
 
-        System.out.println();
-
         for (String butterflyThree : butterflies) {
-            System.out.println(butterflyThree);
+            System.out.println("\n" + butterflyThree);
         }
     }
 }
