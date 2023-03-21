@@ -22,10 +22,11 @@ public class Elements {
         System.out.println();
         int counter = 0;
         for (String element : elements) {
-            if (element.split("-").length > 1) {
+            if (element.contains("-") || element.contains(" ")) {
                 counter++;
             }
         }
+
         System.out.print("\n" + "Количество названий элементов состоящий из нескольких слов : " + counter);
 
         System.out.println("\n");
