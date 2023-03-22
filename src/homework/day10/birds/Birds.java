@@ -7,9 +7,7 @@ public class Birds {
 
     public static void main(String[] args) {
 
-        String[] bird = {"Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля"};
-
-        List<String> birds = Arrays.asList(bird);
+        List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
 
         for (String birdTwo : birds) {
             System.out.print("--" + birdTwo + "--" + "\n");
@@ -18,18 +16,19 @@ public class Birds {
 
         int counter = 0;
         for (String birdThree : birds) {
-            int counterTwo = 0;
-            for (char c : birdThree.toLowerCase().toCharArray()) {
-                if ("уеаоэяию".indexOf(c) != -1) {
-                    counterTwo++;
+            int vowels = 0;
+            for (int i = 0; i < birdThree.length(); i++) {
+                char ch = birdThree.charAt(i);
+                if (ch == 'у' || ch == 'е' || ch == 'а' || ch == 'о' || ch == 'э' || ch == 'ы' || ch == 'я' || ch == 'и' || ch == 'ю') {
+                    vowels++;
                 }
             }
-            if (counterTwo > 1) {
+            if (vowels > 1) {
                 counter++;
             }
         }
+        System.out.println("Количество птиц с больше чем одной гласной: " + counter);
 
-        System.out.println("Количкество птиц, где больше 1 гласной : " + counter + "\n");
 
         for (int i = 0; i < birds.size(); i++) {
             System.out.print(birds.get(i) + " ");
