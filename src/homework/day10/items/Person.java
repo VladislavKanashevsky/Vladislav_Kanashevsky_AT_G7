@@ -14,7 +14,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "age=" + age + ", name='" + name + '\'' + '}';
+        return "Person " + "age = " + age + ", name = " + name;
     }
 
     @Override
