@@ -14,7 +14,7 @@ public class Sand {
 
     @Override
     public String toString() {
-        return "Sand{" + "weigh=" + weigh + ", name='" + name + '\'' + '}';
+        return "Sand " + "weigh = " + weigh + ", name = " + name;
     }
 
     @Override
