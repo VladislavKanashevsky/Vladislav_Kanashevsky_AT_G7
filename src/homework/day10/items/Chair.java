@@ -14,7 +14,7 @@ public class Chair {
 
     @Override
     public String toString() {
-        return "Chair{" + "height=" + height + ", width=" + width + '}';
+        return "Chair " + "height = " + height + ", width = " + width;
     }
 
     @Override
