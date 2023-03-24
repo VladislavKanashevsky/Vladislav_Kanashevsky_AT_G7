@@ -16,11 +16,12 @@ public class Doubles {
         }
         System.out.println();
 
-        double counter = 1.0;
+        double counter = 0.0;
         for (double summa : doubles) {
-            counter *= summa;
+            counter += summa;
         }
         System.out.println("\n" + counter);
+        System.out.println();
 
         double counterTwo = 0.0;
         for (double summaThree : doubles) {
@@ -29,6 +30,7 @@ public class Doubles {
             counterTwo += result;
         }
         System.out.println(counterTwo);
+        System.out.println();
 
         for (int i = 0; i < doubles.size(); i++) {
             double resultDouble = floor(doubles.get(i));
