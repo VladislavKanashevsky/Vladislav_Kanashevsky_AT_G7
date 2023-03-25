@@ -1,4 +1,4 @@
-package day11;
+package day11.methodOne;
 
 public class Runner {
     public static void main(String[] args) {

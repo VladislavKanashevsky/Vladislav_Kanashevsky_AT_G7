@@ -1,4 +1,4 @@
-package day11;
+package day11.methodFour;
 
 public class ClassX {
 

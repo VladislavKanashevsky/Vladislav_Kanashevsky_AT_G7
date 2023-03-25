@@ -1,4 +1,4 @@
-package day11;
+package day11.methodOne;
 
 public class MyClass {
     public void justMethod(IMyInterface staff) {
