@@ -1,4 +1,6 @@
-package day11;
+package day11.methodThree;
+
+import day11.methodFour.ClassX;
 
 import java.lang.FunctionalInterface;
 

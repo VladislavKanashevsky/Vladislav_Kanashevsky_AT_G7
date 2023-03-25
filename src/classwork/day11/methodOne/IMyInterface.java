@@ -1,4 +1,4 @@
-package day11;
+package day11.methodOne;
 
 import java.lang.FunctionalInterface;
 
