@@ -24,5 +24,18 @@ public class MyClassFour {
         List<String> s4 = list.stream().filter(s5 -> s5.contains("м")).distinct().collect(Collectors.toList());
         System.out.println(s4);
 
+        boolean s5 = list.stream().anyMatch(s6 -> s6.equals("мама"));
+        System.out.println(s5);
+
+        boolean s7 = list.stream().allMatch(s8 -> s8.contains("м"));
+        System.out.println(s7);
+
+        List<String> s8 = list.stream().map(s9 -> s9 + "м").collect(Collectors.toList());
+        System.out.println(s8);
+
+        List<String> s9 = list.stream().flatMap(s10 -> Arrays.stream(s10.split("а")).filter(s11 -> !s11.isEmpty())).collect(Collectors.toList());
+        System.out.println(s9);
+
+
     }
 }
