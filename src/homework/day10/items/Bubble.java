@@ -4,11 +4,27 @@ import java.util.Objects;
 
 public class Bubble {
 
-    private double volume;
+    private int volume;
     private String name;
 
-    public Bubble(double volume, String name) {
+    public Bubble(int volume, String name) {
         this.volume = volume;
+        this.name = name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -30,19 +46,4 @@ public class Bubble {
         return Objects.hash(volume, name);
     }
 
-    public double getVolume() {
-        return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
