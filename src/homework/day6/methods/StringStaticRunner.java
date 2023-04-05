@@ -15,7 +15,15 @@ public class StringStaticRunner {
         MethodThirdStatic.MethodThirdStaticProcess("Hello214124 color4124124 car12314 black321313");
         System.out.println();
 
-        MethodFourthStatic.MethodFourthStaticProcess("2020.09.07");
+        MethodFourthStatic.MethodFourthStaticProcess("access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.5 denied\n" +
+                "access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.6 denied\n" +
+                "access_log.2020.09.07 212.168.101.6 denied\n" +
+                "access_log.2020.09.07 212.168.122.6 denied\n" +
+                "access_log.2020.09.07 212.168.122.6 granted\n" +
+                "access_log.2020.09.07 212.168.122.6 denied");
         System.out.println();
 
         MethodFifthStatic.MethodFifthStaticProcess();
